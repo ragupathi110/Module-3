@@ -1,29 +1,44 @@
-# Exp.No:3d  
-## TUPLES - A TUPLE WITH MULTIPLES OF 5
+# Exp.No:3b  
+## REGEX - PATTERN MATCHING USING REGEX
 
----
 
 ### AIM  
-To write a Python program to create a tuple containing all multiples of 5 up to a given number **N**.
-
----
+To write a Python program  to check that a string contains only a certain set of characters (in this case a-z, A-Z and 0-9).
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Accept an integer `N` from the user.  
-3. Use a generator expression inside the `tuple()` function to create a tuple `multiples_of_5` with values starting from `5` up to `N - 1`, stepping by `5`.  
-4. Return the tuple `multiples_of_5`.  
-5. Print the resulting tuple.  
-6. Terminate the program.
+1.Start
 
----
+2.Input the string
+
+3.For each character in the string:
+
+4.Check if the character is not alphanumeric (i.e., not a letter or digit)
+
+5.If any such character is found:
+
+6.Return False (string is invalid)
+
+7.If all characters are alphanumeric:
+
+8.Return True (string is valid)
+
+9.End
 
 ### PROGRAM
 
-```
-```
-
+import re      <br />
+n=input()      <br />
+a=re.search('^[a-z]+$',n) <br />
+if a: <br />
+    print("True")    <br />
+else:     <br />
+    print("False")
+    
 ### OUTPUT
 
+![Screenshot 2025-04-30 105012](https://github.com/user-attachments/assets/061aac71-29ce-457d-81de-1e3fe75640b9)
+
+
 ### RESULT
+Thus, the given python program is implemented and executed sucessfully.
